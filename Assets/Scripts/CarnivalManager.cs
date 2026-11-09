@@ -2,13 +2,8 @@ using UnityEngine;
 
 public class CarnivalManager : MonoBehaviour
 {
-
-    Collider[] knockedCans = Physics.OverlapBox(
-            transform.position,
-            transform.localScale,
-            Quaternion.identity,
-            0 // layer mask (0 = all layers)
-        );
+    // layer mask (0 = all layers)
+    //Collider[] knockedCans = Physics.OverlapBox(transform.position,transform.localScale,Quaternion.identity,0);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
