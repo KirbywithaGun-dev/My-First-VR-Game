@@ -2,30 +2,43 @@ using UnityEngine;
 
 public class CarnivalManager : MonoBehaviour
 {
-    // layer mask (0 = all layers)
-    //Collider[] knockedCans = Physics.OverlapBox(transform.position,transform.localScale,Quaternion.identity,0);
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject key;
+    private int canCount = 0;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Hide key by default
+        key.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ball"))
+        // When a can enters this collider it is "knocked over" and canCount is increased
+        if (other.CompareTag("Can"))
         {
-            Debug.Log("A baseball has entered the collider");
+            ++canCount;
+            Debug.Log("Cans knocked over: " + canCount);
+            // If all cans are knocked over, show key
+            if (canCount >= 12)
+            {
+                Debug.Log("Carnival Puzzle Solved");
+                key.SetActive(true);
+            }
         }
-        else if (other.CompareTag("Can"))
+        else if (other.CompareTag("Ball"))
         {
-            Debug.Log("A Can has entered the collider");
+            Debug.Log("Baseball entered");
         }
-
     }
+
+    // If a can leaves the collider (usually during a reset) decrement canCount
+    /*
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Can"))
+        {
+            --canCount;
+        }
+    }
+    */
 }
