@@ -30,8 +30,8 @@ public class ChestManager : MonoBehaviour
         // If code increments past 9, reset to 0
         if(code[index]>9){code[index] = 0;}
         // Update canvas to reflect new code and check to see if the correct code has been inputed
-        UpdateText;
-        CheckCode;
+        UpdateText();
+        CheckCode();
     }
 
     // Checks if the correct code has been inputed, if so call OpenChest()
@@ -39,7 +39,7 @@ public class ChestManager : MonoBehaviour
     {
         if(code[0] == 3 && code[1] == 6 && code[2] == 5)
         {
-            OpenChest;
+            OpenChest();
         }
     }
 
