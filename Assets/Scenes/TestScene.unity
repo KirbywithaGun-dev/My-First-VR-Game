@@ -3125,6 +3125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e8e5e1a40a0e548b2df4cd8fdaf6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  redText: {fileID: 433882813}
+  greenText: {fileID: 2002751092}
+  blueText: {fileID: 2038579667}
+  key: {fileID: 0}
 --- !u!4 &591568710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8508701727336085493, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
@@ -3574,6 +3578,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5163904642702698107, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 591568708}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncrementCode
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6045,6 +6069,26 @@ PrefabInstance:
     - target: {fileID: 5163904642702698107, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 591568708}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncrementCode
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10188,6 +10232,22 @@ PrefabInstance:
     - target: {fileID: 5163904642702698107, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 591568708}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IncrementCode
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988340175088307263, guid: cf86ea0d66d5c214ba12fcdec4a17fa1, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
