@@ -25,20 +25,26 @@ public class CarnivalManager : MonoBehaviour
                 key.SetActive(true);
             }
         }
-        else if (other.CompareTag("Ball"))
-        {
-            Debug.Log("Baseball entered");
-        }
     }
 
     // If a can leaves the collider (usually during a reset) decrement canCount
-    /*
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Can"))
         {
             --canCount;
+            Debug.Log("Cans knocked over: " + canCount);
         }
     }
-    */
+
+    // If the red reset button is pushed, reset all baseballs and cans
+    public void ResetAllResettableObjects()
+    {
+        Debug.Log("Reseting Carnival puzzle");
+        foreach (var obj in FindObjectsByType<ResettableObject>())
+        {
+            obj.ResetObject();
+        }
+    }
+    
 }

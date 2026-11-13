@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6588654230291915661}
   - component: {fileID: 1250578494394149053}
   - component: {fileID: 7891428675153189479}
+  - component: {fileID: -4394622050932718776}
   m_Layer: 7
   m_Name: Baseball
   m_TagString: Ball
@@ -271,3 +272,16 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &-4394622050932718776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316653531038693223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0061785fc34fa4d8256ee0c0d4842e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResetableObject
+  rigidbody: {fileID: 1250578494394149053}
