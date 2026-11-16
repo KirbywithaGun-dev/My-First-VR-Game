@@ -8,20 +8,18 @@ public class ChestManager : MonoBehaviour
     [SerializeField] private TMP_Text greenText;
     [SerializeField] private TMP_Text blueText;
     [SerializeField] private GameObject key;
+    [SerializeField] private Animator chestLid;
     private int[] code = {0,0,0}; // {red, green, blue}
     private bool isSolved = false; // Prevents animation from being triggered twice
+
+    // NOTE: Buttons are currently locked to the Z axis so depending on the direction of the chest this may need to be changed
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        key.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     // When a button is pushed, increment it's respective code slot
     public void IncrementCode(int index)
@@ -37,7 +35,7 @@ public class ChestManager : MonoBehaviour
     // Checks if the correct code has been inputed, if so call OpenChest()
     private void CheckCode()
     {
-        if(code[0] == 3 && code[1] == 6 && code[2] == 5)
+        if(code[0] == 3 && code[1] == 6 && code[2] == 4)
         {
             OpenChest();
         }
@@ -57,6 +55,8 @@ public class ChestManager : MonoBehaviour
         if (!isSolved)
         {
             isSolved = true;
+            key.SetActive(true);
+            chestLid.Play("hinge_open");
         }
     }
 }
