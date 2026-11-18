@@ -27,12 +27,6 @@ public class BookshelfManager : MonoBehaviour
         // hide key by default
         Key.gameObject.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 	
 	public void CheckSockets()
 	{

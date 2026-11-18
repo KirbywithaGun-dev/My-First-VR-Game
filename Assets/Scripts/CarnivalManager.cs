@@ -19,7 +19,7 @@ public class CarnivalManager : MonoBehaviour
             ++canCount;
             Debug.Log("Cans knocked over: " + canCount);
             // If all cans are knocked over, show key
-            if (canCount >= 12)
+            if (canCount >= 6)
             {
                 Debug.Log("Carnival Puzzle Solved");
                 key.SetActive(true);
